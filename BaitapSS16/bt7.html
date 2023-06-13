@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let number = Number(prompt("Nhập vào số"));
+        function checkPrimeNumber(number) {
+            if (number < 2) {
+                return `${number} không là số nguyên tố`;
+            }
+            for (let i = 2; i <= Math.sqrt(number); i++) {
+                if (number % i == 0) {
+                    return `${number} không là số nguyên tố`;
+                }
+            }
+            return `${number} là số nguyên tố`;
+
+        }
+        let result1 = checkPrimeNumber(number);
+        console.log(result1);
+
+        function chanLe(number) {
+            if (number % 2 == 0) {
+                return `${number} là số chẵn`;
+            } else {
+                return `${number} là số lẻ`;
+            }
+        }
+        let result2 = chanLe(number);
+        console.log(result2);
+
+        function perfectNumber(number) {
+            let sum = 0;
+            for (var i = 1; i < number; i++) {
+                if (number % i == 0) {
+                    sum += i;
+                    return`${number} là số hoàn hảo`
+                }
+            }
+            return `${sum} không phải số hoàn hảo`;
+        }
+        let result3 = perfectNumber(number);
+        console.log(result3);
+
+
+
+
+
+    </script>
+</body>
+
+</html>

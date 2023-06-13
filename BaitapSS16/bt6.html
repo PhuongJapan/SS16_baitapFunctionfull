@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let value = [];
+        let arrLength = Number(prompt("Nhập độ dài của mảng"));
+        for (let index = 0; index < arrLength; index++) {
+            value[index] = Number(prompt("Nhập vào giá trị số"));
+        }
+        console.log(value);
+        function maxNumber(value) {
+            let max = value[0];
+            for (let index = 0; index < value.length; index++) {
+                if(max<value[index]){
+                    max = value[index];
+                }                
+            } return max;         
+            
+        }
+        let result = maxNumber(value);
+
+        console.log("Giá trị lớn nhất là: ", result);
+
+        
+        // function value(number1, number2, number3) {
+        //     let max = number1;
+        //     if(max<number2){
+        //         max = number2;
+        //     }
+        //     if(max<number3){
+        //         max=number3;
+        //     }
+        //     return max;
+            
+        // } 
+        // let result = value(5,7,9);
+        // console.log("Giá trị lớn nhất là:", result);
+        // let value = [];
+
+    </script>
+</body>
+</html>

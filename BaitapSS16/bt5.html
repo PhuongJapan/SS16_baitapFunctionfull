@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let word = "riKKeIaCademY"
+        let lowercaseWord = word.toLowerCase();
+
+        let capital = (lowercaseWord) => {
+            return lowercaseWord.charAt(0).toUpperCase() + lowercaseWord.slice(1);
+        }
+        let result = capital(lowercaseWord);
+        console.log("Kết quả là", result);
+
+    </script>
+</body>
+
+</html>
